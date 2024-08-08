@@ -1,14 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+//rafce
+import React from 'react'
 
-function App() {
-  
-  return(
+const App = () => {
+  return (
     <div>
-      <h1>hello world</h1>
-      
+      <div>
+        <img src="https://th.bing.com/th/id/OIP.q_ncYnMDBTBP8Wr1eBtCggHaEK?rs=1&pid=ImgDetMain" width='100%' height='400px' alt="" />
+      </div>
+      <h2>Name:Queen of Tears</h2>
+      <h3>Rating : 8.2</h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque minima, officia veritatis doloremque incidunt odit porro, hic harum error fugiat ducimus in? Ducimus minima cum nesciunt distinctio sint numquam ex.</p>
     </div>
   )
 }
