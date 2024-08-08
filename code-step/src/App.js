@@ -1,20 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
-import Student from './Student'
+// import Student from './Student'
+import React ,{useState} from 'react'
+
 function App() {
+  const [data,setData]=useState(null)
+
+  function getData(val){
+    console.log(val.target.value)
+    setData(val.target.value)
+  }
   return (
     <div className="App">
-      <h1>props in React :)</h1>
-      <Student name='bharat' email='bharat23@gmail.com'/>
-      <Student name='suraj' email='bharat23@gmail.com'/>
-      <Student name='Pavan' email='bharat23@gmail.com'/>
-      
-      
-      {/* <Student name='suraj'/>
-      <Student name='Pavan'/> */}
+     <h1>{data}</h1>
+     <input type="text" onChange={getData}/>
     </div>
     
   );
 }
 
 export default App;
+ 
