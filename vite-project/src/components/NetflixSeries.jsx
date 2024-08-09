@@ -1,44 +1,28 @@
-const NetflixSeries = () => 
-    {
-    const returnGenre = () => {
-      const genre = "RomCom";
-      return genre;
-    };
-  
-    const name = 'Queen of Tears';
-    const rating = '8.3';
-    
-    // Using prompt inside a component can cause issues with React's rendering process.
-    // Instead, it might be better to handle this in a different way, like passing the age as a prop or using state.
-   
-  
-    
-    
-  
+// import seriesData from './seriesData.json';
+import seriesData from "../api/seriesData.json";
+
+const NetflixSeries = () => {
     return (
-      <div>
-        <div>
-          <div>
-            <img src="https://th.bing.com/th/id/OIP.q_ncYnMDBTBP8Wr1eBtCggHaEK?rs=1&pid=ImgDetMain" width='70%' height='400px' alt="" />
-          </div>
-          <h2>Name: {name}</h2>
-          <h3>Rating: {rating}</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque minima, officia veritatis doloremque incidunt odit porro, hic harum error fugiat ducimus in? Ducimus minima cum nesciunt distinctio sint numquam ex.</p>
-          <p>Genre: {returnGenre()}</p>
-          <button>Watch Now</button>
-        </div>
-      </div>
+        <ul>
+            {seriesData.map((curElem) => {
+                return (
+                    <li key={curElem.id}>
+                        <div>
+                            <img src={curElem.img_url} width="70%" height="70%" alt={curElem.name} />
+                        </div>
+                        <h2>Name: {curElem.name}</h2>
+                        <h3>Rating: {curElem.rating}</h3>
+                        <p>Summary: {curElem.description}</p>
+                        <p>Genre: {curElem.genre}</p>
+                        <p>Cast: {curElem.cast}</p>
+                        <a href={curElem.watch_url} target="_blank" rel="noopener noreferrer">
+                            <button>Watch Now</button>
+                        </a>
+                    </li>
+                );
+            })}
+        </ul>
     );
-}
-export default NetflixSeries
+};
 
-
-export const Footer=()=>
-{
-  return (
-    <div>
-      <p>Copyright @BharatKadam</p>
-    </div>
-  )
-}
-  
+export default NetflixSeries;
