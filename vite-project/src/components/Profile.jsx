@@ -14,7 +14,7 @@ const Profile = () => {
         >
             <p>Hobbies:Reading,Hiking</p>
             <button>Contact</button>
-        </ProfileCard>
+        </ProfileCard> 
         <ProfileCard 
         name='Bob'
         age={23}

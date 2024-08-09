@@ -1,3 +1,4 @@
+import '../components/Netflix.css'
 const SeriesData=(props)=>{
     console.log(props)
     const {data}=props
@@ -5,7 +6,7 @@ const SeriesData=(props)=>{
          
             <li>
                 <div>
-                  <img src={data.img_url} width="70%" height="70%" alt={data.name} />
+                  <img className="img-size" src={data.img_url} width="70%" height="70%" alt={data.name} />
                 </div>
                 <h2>Name: {data.name}</h2>
                 <h3>Rating: {data.rating}</h3>
