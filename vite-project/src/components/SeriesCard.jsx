@@ -1,17 +1,18 @@
 const SeriesData=(props)=>{
     console.log(props)
+    const {data}=props
      return(
          
             <li>
                 <div>
-                  <img src={props.curElem.img_url} width="70%" height="70%" alt={props.curElem.name} />
+                  <img src={data.img_url} width="70%" height="70%" alt={data.name} />
                 </div>
-                <h2>Name: {props.curElem.name}</h2>
-                <h3>Rating: {props.curElem.rating}</h3>
-                <p>Summary: {props.curElem.description}</p>
-                <p>Genre: {props.curElem.genre}</p>
-                <p>Cast: {props.curElem.cast}</p>
-                <a href={props.curElem.watch_url} target="_blank" rel="noopener noreferrer">
+                <h2>Name: {data.name}</h2>
+                <h3>Rating: {data.rating}</h3>
+                <p>Summary: {data.description}</p>
+                <p>Genre: {data.genre}</p>
+                <p>Cast: {data.cast}</p>
+                <a href={data.watch_url} target="_blank" rel="noopener noreferrer">
                     <button>Watch Now</button>
                 </a>
             </li>
