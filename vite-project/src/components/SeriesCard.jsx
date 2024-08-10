@@ -6,17 +6,21 @@ const SeriesData=(props)=>{
         padding:'1.2rem 2.4rem',
         border:'none',
         fontSize:'1.6rem',
-        backgroundColor:'var(--btn-hover-bg-color)',
-        color:'wheat',
+        backgroundColor:data.rating > 8.5 ? '#7dcea0' :'#f7dc6f' ,
+        color:'black',
+        fontWeight:'bold',
+        cursor:'pointer',
+
     }
+    const ratingClass=data.rating > 8.5 ? 'super_hit' :'average'
      return(
          
-            <li className='card'>
+            <li className='card' >
                 <div className='card-content'>
                   <img className="img-size" src={data.img_url} width="70%" height="70%" alt={data.name} />
                 
                 <h2>Name: {data.name}</h2>
-                <h3 style={{fontSize:'1.3rem'}}>Rating: {data.rating}</h3>
+                <h3 style={{fontSize:'1.3rem'}}>Rating: <span className={`rating ${ratingClass}`}>{data.rating}</span></h3>
                 <p>Summary: {data.description}</p>
                 <p>Genre: {data.genre}</p>
                 <p>Cast: {data.cast}</p>
