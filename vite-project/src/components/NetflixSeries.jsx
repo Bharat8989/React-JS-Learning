@@ -10,7 +10,7 @@ const NetflixSeries = () => {
                <SeriesData key={curElem.id} data={curElem}/>
             )}
             
-        </ul>  
+        </ul>   
     );
 };
 

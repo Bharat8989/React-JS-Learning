@@ -23,7 +23,7 @@ const SeriesData = (props) => {
     //     color: 'black',
     //     fontWeight: 'bold',
     //     cursor: 'pointer',
-    // } 
+    // }  
 
     // Adjusting the className with correct usage of CSS Modules
     const ratingClass = data.rating > 8.5 ? style.super_hit : style.average
