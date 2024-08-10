@@ -30,11 +30,14 @@ const SeriesData = (props) => {
 
     return (
         <li className={style.card}>
-            <div className={style.cardContent}>
-                <img className={style.imgSize} src={data.img_url} width="70%" height="70%" alt={data.name} />
+            <div>
+            <img className={style.imgSize} src={data.img_url} width="70%" height="70%" alt={data.name} />
+            </div>
+            {/* <div className={style.cardContent}> */}
+               <div className='flex flex-col gap-7 py-6 px-6'>
                 <h2>Name: {data.name}</h2>
                 <h3 style={{ fontSize: '1.3rem' }}>Rating: <span className={ratingClass}>{data.rating}</span></h3>
-                <p>Summary: {data.description}</p>
+                <p className="text-3xl font-bold none text-cyan-300">Summary: {data.description}</p>
                 <p>Genre: {data.genre}</p>
                 <p>Cast: {data.cast}</p>
                 <a href={data.watch_url} target="_blank" rel="noopener noreferrer">
