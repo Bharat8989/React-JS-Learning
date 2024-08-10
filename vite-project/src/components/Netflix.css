@@ -11,7 +11,7 @@ img{
     width: 220px;
  } */
 
- .card-content{
+ .card-content{ 
    padding: 3.2rem 1.2rem;
    display: flex;
    flex-direction: column;

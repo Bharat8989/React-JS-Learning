@@ -1,6 +1,8 @@
 import React from 'react';
 import NetflixSeries from '../src/components/NetflixSeries'
-import "./components/Netflix.css"
+// import "./components/Netflix.css"
+
+import './components/Netflix.module.css'
 const App = () => {
   return (
     <section className='container'>
@@ -14,5 +16,5 @@ const App = () => {
 }; 
 
 
-export default App;
+export default App; 
  
