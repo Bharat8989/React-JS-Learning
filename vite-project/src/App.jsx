@@ -4,6 +4,7 @@ import React from 'react';
 
 import './components/Netflix.module.css'
 import EventHandling from './components/EventHandling';
+import EventProps from './components/EventProps';
 
 
 
@@ -13,7 +14,8 @@ const App = () => {
 
       {/* <h1 className='card-heading'>List of Best Netflix series</h1> */}
         {/* <NetflixSeries /> */}
-        <EventHandling/>
+        {/* <EventHandling/> */}
+        <EventProps/>
 
     </section>
   )
