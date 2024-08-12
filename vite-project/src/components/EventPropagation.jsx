@@ -9,8 +9,11 @@ const EventPropagation = () => {
     const handleGreeting=()=>{
         console.log("grandparent clicked")
     };
-    const handleParentClick=()=>{
+    const handleParentClick=(event)=>{
+        console.log(event)
+        event.stopPropagation();
         console.log("parent clicked")
+     
     }
     const handleChildClick=(event)=>{
         console.log(event)
