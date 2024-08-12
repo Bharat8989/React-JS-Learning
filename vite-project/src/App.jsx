@@ -2,10 +2,12 @@ import React from 'react';
 // import NetflixSeries from '../src/components/NetflixSeries'
 // import "./components/Netflix.css"
 
-import './components/Netflix.module.css'
-import EventHandling from './components/EventHandling';
-import EventProps from './components/EventProps';
-import EventPropagation from './components/EventPropagation';
+// import './components/Netflix.module.css'
+// import EventHandling from './components/EventHandling';
+// import EventProps from './components/EventProps';
+// import EventPropagation from './components/EventPropagation';
+import './components/EV.css'
+import State from './components/hooks/State'
 
 
 
@@ -17,7 +19,9 @@ const App = () => {
         {/* <NetflixSeries /> */}
         {/* <EventHandling/> */}
         {/* <EventProps/> */}
-        <EventPropagation/>
+        {/* <EventPropagation/> */}
+
+        <State/>
 
     </section>
   )
@@ -26,4 +30,4 @@ const App = () => {
 
 
 export default App; 
- 12
+ 

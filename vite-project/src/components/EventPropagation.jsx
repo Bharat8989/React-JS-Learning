@@ -18,7 +18,7 @@ const EventPropagation = () => {
     const handleChildClick=(event)=>{
         console.log(event)
         console.log('child clicked')
-    }
+    } 
 
   return (
     <section className='main-div'>
