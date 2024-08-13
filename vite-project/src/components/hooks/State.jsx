@@ -11,12 +11,22 @@ const State = () => {
 
   return (
     <>
-      <section className='main-div'>
+      <div className='main-div'>
         <h1>{count}</h1>
         <button onClick={handleButtonClick}>Increment</button>
-      </section>
+      </div>
+      <ChildComponent count={count}/>
     </>
   );
 };
+
+function ChildComponent({count}){
+  console.log("child Component rendered")
+  return (
+    <div className="main.div">
+      <h2>Child Component - {count}</h2>
+    </div>
+  )
+}
 
 export default State;
