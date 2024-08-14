@@ -8,6 +8,7 @@ import React from 'react';
 // import EventPropagation from './components/EventPropagation';
 import './components/EV.css'
 import State from './components/hooks/State'
+import { DerivedState } from './components/hooks/DericedState';
 
 
 
@@ -21,8 +22,9 @@ const App = () => {
         {/* <EventProps/> */}
         {/* <EventPropagation/> */}
 
-        <State/>
-        <Sibling/>
+        {/* <State/> */}
+        {/* <Sibling/> */}
+        <DerivedState/>
     </section>
   )
   
