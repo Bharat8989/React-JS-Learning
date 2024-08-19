@@ -7,9 +7,9 @@ import React from 'react';
 // import EventProps from './components/EventProps';
 // import EventPropagation from './components/EventPropagation';
 import './components/EV.css'
-import State from './components/hooks/State'
-import { DerivedState } from './components/hooks/DericedState';
-
+// import State from './components/hooks/State'
+// import { DerivedState } from './components/hooks/DericedState';
+import ListStateUp from './components/ListStateUp';
 
 
 const App = () => {
@@ -24,7 +24,8 @@ const App = () => {
 
         {/* <State/> */}
         {/* <Sibling/> */}
-        <DerivedState/>
+        {/* <DerivedState/> */}
+        <ListStateUp/>
     </section>
   )
   
