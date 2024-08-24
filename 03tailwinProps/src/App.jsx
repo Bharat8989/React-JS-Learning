@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import Card from './components/Card.jsx'
+// import Card from './components/Card.jsx'
+import Bgcolor from './bgChange/Bgcolor.jsx'
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
     
     <Card userName='king'/>
     <Card userName='suraj' vive='click me'/> */}
-
+    <Bgcolor/>
     </>
   )
 }
