@@ -9,7 +9,8 @@ import React from 'react';
 import './components/EV.css'
 // import State from './components/hooks/State'
 // import { DerivedState } from './components/hooks/DericedState';
-import ListStateUp from './components/ListStateUp';
+// import ListStateUp from './components/ListStateUp';
+import UseState from './Counter/Usestate.jsx';
 
 
 const App = () => {
@@ -25,7 +26,9 @@ const App = () => {
         {/* <State/> */}
         {/* <Sibling/> */}
         {/* <DerivedState/> */}
-        <ListStateUp/>
+        {/* <ListStateUp/> */}
+        <UseState/>
+
     </section>
   )
   
